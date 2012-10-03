@@ -47,8 +47,8 @@ function showResultSetbyUsername($resultSet){
 
 func_get_arg(arg_num)
 
-$username='mruiz';
-$resultSet=ResultSetbyUsername($username);
+//$username='mruiz';
+$resultSet=ResultSetbyUsername('mruiz');
 showResultSet($resultSet);
 
 ?>
