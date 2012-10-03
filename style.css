@@ -1,0 +1,54 @@
+    body{
+        font-family: verdana;
+        font-size: 90%;
+            background:#636262;
+            color:black;
+            
+    }
+
+    #general{
+        background:#f1f2f3;
+        height: 100%;
+        width: 700px;
+        max-width: 95%;
+        margin:0 auto;
+        border-radius: 15px;
+   }
+
+    .degradado{
+       
+       background: -moz-linear-gradient(top, #dddddd, #f1f2f3, #dddddd);/* F 3.6+ */
+       background: -ms-linear-gradient(top, #dddddd, #f1f2f3, #dddddd);/* IE 10+ */
+       background: -webkit-linear-gradient(top, #818181, #dddddd, #818181);/* FF 3.6+ */
+       background: -o-linear-gradient(top, #dddddd, #f1f2f3, #dddddd);/* Safari 5.1+, Chrome 10+ */
+       background: linear-gradient(top, #818181, #f1f2f3, #818181);/* ESTILO ESTANDAR */
+       
+    }
+
+    header{
+        width: 300px;
+        max-width: 90%;
+        margin:auto;
+        padding-top: 5%;
+        text-align: center;
+
+    }
+
+    section{
+        background:#828282;
+        width: 320px;
+        max-width: 90%;
+        min-height: 200px;
+        margin:0 auto;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-size: 1.5em/100%;
+        border-radius: 5px;
+    }
+
+
+    footer{
+        width: 300px;
+        max-width: 90%;
+        margin:auto;
+    }
