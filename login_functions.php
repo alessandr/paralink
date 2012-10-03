@@ -28,27 +28,22 @@ function ResultSetbyUsername($username){
 }
 
 
-function showResultSetbyUsername($resultSet){
+function showResultSet($resultSet){
 	$num_rows=mysql_num_rows($resultSet);
 	echo "Num_rows: ".$num_rows."<br />";
 	if ($num_rows <= 0) {
     	echo "No rows found, nothing to print so am exiting";
-    exit;
+    	exit;
 	}
 	
-	while($row = mysql_fetch_assoc($resultSet)){
-	    extract($row);
-	    echo "Codigo: ".$codigo."<br />";
-	    echo "Nombres: ".$nombres."<br />";
-	    echo "Apellidos: ".$apellidos."<br />";
+	foreach(mysql_fetch_assoc($resultSet) as $key => $value){
+		echo ucfirst($key).": ".$value."<br />";
 	}
 }
 
 
-func_get_arg(arg_num)
-
-//$username='mruiz';
-$resultSet=ResultSetbyUsername('mruiz');
+$username='mruiz';
+$resultSet=ResultSetbyUsername($username);
 showResultSet($resultSet);
 
 ?>
